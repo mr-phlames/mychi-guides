@@ -1,14 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Mychi Guides`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Michael Darko`,
+      summary: `This is a little blog documenting things I've tried, problems
+      I run into, explanations and fixes for them. Let's all learn together.
+      Cheers!`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `This is a little blog documenting things I've tried, problems
+      I run into, explanations and fixes for them. Let's all learn together.
+      Cheers!`,
+    siteUrl: `https://mychi-guides.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `mychi_darko`,
+      instagram: `mychi_darko`,
+      github: `mr-phlames`,
+      website: `https://mychi.netlify.app`
     },
   },
   plugins: [
@@ -53,15 +60,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Mychi Guides`,
+        short_name: `Guides`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

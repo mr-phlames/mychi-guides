@@ -11,7 +11,11 @@ const NotFoundPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="404: Not Found" />
       <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <p>
+        Whoops...no article found here. There might have been a mistake with your url.&nbsp;
+        <a href="https://github.com/mr-phlames/mychi-guides" target="_blank">Open an issue</a>
+        &nbsp;if you believe this is an error.
+      </p>
     </Layout>
   )
 }

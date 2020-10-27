@@ -12,7 +12,7 @@ import Image from "gatsby-image"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/mychi.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50, quality: 95) {
             ...GatsbyImageSharpFixed
@@ -27,6 +27,9 @@ const Bio = () => {
           }
           social {
             twitter
+            instagram
+            github
+            website
           }
         }
       }
@@ -39,8 +42,12 @@ const Bio = () => {
 
   const avatar = data?.avatar?.childImageSharp?.fixed
 
+  const rootPath = `${__PATH_PREFIX__}/`
+  // eslint-disable-next-line no-restricted-globals
+  const isRootPath = location.pathname === rootPath
+
   return (
-    <div className="bio">
+    <div className={`bio ${isRootPath ? '-bordered' : ''}`}>
       {avatar && (
         <Image
           fixed={avatar}
@@ -52,13 +59,29 @@ const Bio = () => {
         />
       )}
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+        <div>
+          Hi, I'm <strong>{author.name}</strong>.<br />
+          <p style={{ marginTop: 15 }}>
+            {author?.summary || null}
+          </p>
+          <br />
+          Catch up with me &nbsp;
+          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank">
+            Twitter
           </a>
-        </p>
+          &nbsp;&nbsp;
+          <a href={`https://github.com/${social?.github || ``}`} target="_blank">
+            Github
+          </a>
+          &nbsp;&nbsp;
+          <a href={`https://instagram.com/${social?.instagram || ``}`} target="_blank">
+            Instagram
+          </a>
+          &nbsp;&nbsp;
+          <a href={social?.website} target="_blank">
+            My Site
+          </a>
+        </div>
       )}
     </div>
   )
