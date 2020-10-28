@@ -1,6 +1,6 @@
 ---
 title: PHP setup on Linux Mint 
-date: "2020-10-20T22:12:03.284Z"
+date: "2020-10-27T22:12:03.284Z"
 description: "Setting up PHP on linux mint (for the first time)...and fixing some common PHP errors"
 ---
 
