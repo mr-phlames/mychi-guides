@@ -9,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-const Bio = () => {
+const Bio = ({ location }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/mychi.jpg/" }) {
@@ -66,19 +66,19 @@ const Bio = () => {
           </p>
           <br />
           Catch up with me &nbsp;
-          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank">
+          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank" rel="noreferrer">
             Twitter
           </a>
           &nbsp;&nbsp;
-          <a href={`https://github.com/${social?.github || ``}`} target="_blank">
+          <a href={`https://github.com/${social?.github || ``}`} target="_blank" rel="noreferrer">
             Github
           </a>
           &nbsp;&nbsp;
-          <a href={`https://instagram.com/${social?.instagram || ``}`} target="_blank">
+          <a href={`https://instagram.com/${social?.instagram || ``}`} target="_blank" rel="noreferrer">
             Instagram
           </a>
           &nbsp;&nbsp;
-          <a href={social?.website} target="_blank">
+          <a href={social?.website} target="_blank" rel="noreferrer">
             My Site
           </a>
         </div>
