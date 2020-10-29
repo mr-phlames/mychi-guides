@@ -2,11 +2,12 @@
 title: PHP setup on Linux Mint 
 date: "2020-10-27T22:12:03.284Z"
 description: "Setting up PHP on linux mint (for the first time)...and fixing some common PHP errors"
+keywords: "Xampp Apache not starting, Setup PHP, PHP plugins not found"
 ---
 
 ## Intro
 
-So I decided to setup a linux dual boot on my laptop, linux mint to be precise, it appears to be debian based, and I once saw grub labelled it as ubuntu. That's besides the point though. My stacks are basically javascript and PHP, so I'd obviously have to setup php and javascript. [Setting up npm and node](/javascript/linux/mint/node-setup) was crazily easy, at least compared to the windows environment I came from.
+So I decided to setup a linux dual boot on my laptop, linux mint to be precise, it appears to be debian based, and I once saw grub labelled it as ubuntu. That's besides the point though. My stacks are basically javascript and PHP, so I'd obviously have to setup php and javascript. Setting up npm and node was crazily easy, at least compared to the windows environment I came from.
 
 ### Setting up PHP
 
