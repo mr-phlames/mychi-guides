@@ -274,7 +274,7 @@ Although this is fine, you can clearly see, we're outputing the HTML as a string
 <?php endforeach; ?>
 ```
 
-You can clearly see how we're maintaining our HTML formatting and code alignment...and no, this is not a templating engine, this is just PHP making things simple for us. One major thing about PHP is how it allows the same thing to be done in many different ways. In this example abovem, we're using:
+You can clearly see how we're maintaining our HTML formatting and code alignment...and no, this is not a templating engine, this is just PHP making things simple for us. One major thing about PHP is how it allows the same thing to be done in many different ways. In this example above, we're using:
 
 ```php
 foreach (...):
@@ -368,13 +368,13 @@ Next would be to pick something you're comfortable with and stick to it. There a
 - Slim: A rest API framework, has a sort of "bring your own" vibe
 - Leaf: That's what I wrote, inspired by Slim and Laravel, it gives you magic you can control.
 
-*I only mentioned frameworks I actually use to avoid bias*
+*I only mentioned frameworks I actually use to avoid bias.*
 
 ## Tip 10: (Don't just code!)
 
 Alright, this one is a bonus tip. It applies to not just PHP, but technically almost every language/framework you work with. What I mean by don't just code is relatively straightforward.
 
-Let's say you want to write a method that sort of requests a payment from a user's account, jumping straight into coding out this feature may (or may not) end up getting you confused at some point, where you'd have to stop, scroll back up, scheck something from a file somewhere, or something similar.
+Let's say you want to write a method that sort of requests a payment from a user's account, jumping straight into coding out this feature may (or may not) end up getting you confused at some point, where you'll have to stop, scroll back up, scheck something from a file somewhere, or something similar.
 
 What am I proposing? Here:
 
@@ -402,4 +402,4 @@ This above just allows you to do all the required thinking before actually jumpi
 
 These are a few tips and tricks I've discovered on my PHP journey, some of these might work for you and others may not, feel free to choose whichever you're comfortable with and stick to those.
 
-It's quite wrong to say these are good ways of doing stuff so use these only, as I mentioned before, PHP is the type of language that provides many different ways of doing the same thing, so if you have anything you'd like to share, a new tip, a faster way to do something I mentioned, something you don't agree with, just reach out to me.
+It's quite wrong to say these are good ways of doing stuff so use these only, as I mentioned before, PHP is the type of language that provides many different ways of doing the same thing, so if you have anything you'll like to share, a new tip, a faster way to do something I mentioned, something you don't agree with, just reach out to me.
